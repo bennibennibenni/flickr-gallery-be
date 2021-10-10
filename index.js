@@ -4,7 +4,7 @@ const cors = require("cors");
 const axios = require("axios");
 
 const app = express();
-const port = 4000;
+const PORT = process.env.PORT || 8080;
 
 app.use(cors());
 
@@ -48,6 +48,6 @@ app.get("/images", async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server is listening at http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Server is running in port ${PORT}`);
 });
