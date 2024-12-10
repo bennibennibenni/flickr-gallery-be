@@ -23,10 +23,9 @@ app.get("/images", async (req, res) => {
         tags && `&tags=${tags}`
       }`
     );
-    console.log(`https://www.flickr.com/services/feeds/photos_public.gne?id=76499814&format=json&${
-        tags && `&tags=${tags}`
-      )
-          console.log(response)
+    console.log(https://www.flickr.com/services/feeds/photos_public.gne?id=76499814&format=json&${
+    tags && `&tags=${tags})
+    console.log(response)
     let { data } = response;
     data = data.replace("jsonFlickrFeed(", "");
     data = data.substring(0, data.length - 1);
